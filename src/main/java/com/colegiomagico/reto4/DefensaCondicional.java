@@ -1,15 +1,16 @@
 package com.colegiomagico.reto4;
 
 /**
- * Si el hechizo es 'Imperius' o 'Crucio', retorna 'Maldicion'. De lo contrario, 'Permitido'.
- */
+ 
+Si el hechizo es 'Imperius' o 'Crucio', retorna 'Maldicion'. De lo contrario, 'Permitido'.*/
 public class DefensaCondicional {
 
     public static String evaluar(String hechizo) {
-        if ((hechizo == "crucio") || (hechizo == "Imperius")) {
-            return "maldicion";
+        if (hechizo.equals("Imperius") || hechizo.equals("Crucio")) {
+            return "Maldicion";
+        } else {
+            return "Permitido";
         }
-        return "Permitido";
     }
 
     public static void main(String[] args) {
